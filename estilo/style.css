@@ -1,0 +1,19 @@
+@import "button_style.css";
+@import "table_style.css";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: Poppins, serif;
+    text-align: center;
+}
+.content{
+    display: flex;
+    margin: auto;
+}
+
+.list-menu{
+    text-align: center;
+}
