@@ -2,9 +2,10 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>POSTS</title>
+    <title>π Table</title>
     <link rel="icon" href="../midia/favicon.ico">
     <link rel="stylesheet" href="../estilo/style.css">
+    <link href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet">
 </head>
 <body>
 <h1>POSTS</h1>
@@ -14,7 +15,7 @@
     </li>
 </ul>
 <div class="content">
-    <table class="rTable postTable">
+    <table class="rTable postTable" id="myTable">
         <thead>
         <tr>
             <th>User Id</th>
@@ -26,7 +27,7 @@
         <tbody>
         </tbody>
     </table>
+    <script src="../src/post.js"></script>
 </div>
 </body>
-<script src="../src/post.js"></script>
 </html>

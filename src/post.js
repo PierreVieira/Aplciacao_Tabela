@@ -1,3 +1,5 @@
+let corpo_tabela = document.querySelector("tbody");
+
 function criarLinha(element, index, array) {
     let linha = document.createElement("tr")
     let user_id = document.createElement("td")
@@ -13,10 +15,10 @@ function criarLinha(element, index, array) {
     linha.appendChild(title)
     linha.appendChild(body)
     corpo_tabela.appendChild(linha)
+
 }
 
-corpo_tabela = document.querySelector("tbody")
-const data = fetch("https://jsonplaceholder.typicode.com/posts")
+fetch("https://jsonplaceholder.typicode.com/posts")
     .then(response => response.json())
     .then(function (response) {
         response.forEach(criarLinha)
